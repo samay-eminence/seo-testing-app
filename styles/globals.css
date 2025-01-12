@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.content-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.content-description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.content-image {
+  max-width: 100%;
+  height: auto;
+}
