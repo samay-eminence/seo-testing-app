@@ -10,7 +10,6 @@ const GamePage = ({ game }) => {
     title: game.title,
     description: game.description,
     image: game.image,
-    url: `https://your-deployment-url.com/${game.slug}`,
     siteName: game.siteName,
   };
 
@@ -31,7 +30,7 @@ const GamePage = ({ game }) => {
 
 export async function getServerSideProps(context) {
   const { slug } = context.params;
-  const game = getGameData(slug);
+  const game = await getGameData(slug);
   return { props: { game: game || null } };
 }
 
